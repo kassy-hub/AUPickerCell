@@ -180,7 +180,7 @@ open class AUPickerCell: UITableViewCell {
   private(set) var picker: UIView = UIPickerView()
   
   /// The type of the picker used in the cell.
-  public private(set) var pickerType = PickerType.default
+  public var pickerType = PickerType.default
   
   /// The current status of the cell's status. The picker view is visible while the cell is expanded and hidden when it is not. Set this property to the desired state and reload table view rows to expand or contract the cell.
   public var expanded = false
