@@ -132,7 +132,7 @@ public protocol AUPickerCellDelegate {
  }
  ```
 */
-public class AUPickerCell: UITableViewCell {
+open class AUPickerCell: UITableViewCell {
   
   /**
    The picker type determines whether a UIPickerView or a UIDatePicker is used to display and pick values.
