@@ -353,7 +353,11 @@ open class AUPickerCell: UITableViewCell {
   /// Returns an object initialized from data in a given unarchiver.
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    pickerType = .default
+  }
+  
+  open override func awakeFromNib() {
+    super.awakeFromNib()
+    
     initialize()
   }
   
